@@ -1,0 +1,51 @@
+#include<stdio.h>
+int main(){
+
+/*
+i     = it itrate from starting value to ending value
+s     = starting value
+e     = ending value
+d     = divisor
+COUNT = COUNT THE VALUE OF PRIME NUMBER
+logic of 1st loop = 1st loop is the value of divident
+logic of 2nd loop = 2nd 1oop is the value of divisor
+logic of 1st if = if remainder is zero then add 1 to count
+logic of 2nd if = and if count is 2 then it is prime no
+
+GENERAL LOGIC: THE NUMBER IS PRIME IF THE NUMBER IS COMPLETLY DIVIDED BY 1 AND ITSELF......
+*/
+
+
+	int s = 0, e = 0, d = 0, count = 0, i = 0;
+
+    printf("Enter the starting point\n");
+    scanf(" %d",&s);
+    printf("Enter the ending point\n");
+    scanf(" %d",&e);
+
+
+
+	for (i = s; i <= e; i++){  // 1st loop start
+
+		for(d = 1; d <= i; d++){ // 2nd loop start
+
+			if (i % d == 0){
+
+			count++;
+
+			} //end of if
+
+
+		} //end 2nd loop
+        if (count == 2)	{
+
+        printf("the prime number is:  %d\n",i);
+
+        }
+        count = 0; // IF NUMBER IS PRIME TO ITRATE IT NEXT TIME AND REFRESH THE COUNTER........
+
+
+	}// end first loop
+
+	return 0;
+}//end main
