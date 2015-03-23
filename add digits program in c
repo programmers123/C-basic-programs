@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+
+/*
+
+n = input numbers
+example = 12345
+
+sum = addition of number
+
+c = it will get the remainder value.
+example = 5
+
+
+*/
+   int n = 0, sum = 0, c = 0;
+
+   printf("Enter the numbers\n");
+   scanf("%d", &n);
+
+   while (n != 0)          // THE LOOP IS VALID TILL QUOTIENT NOT EQUAL TO 0..
+   {
+
+      c = n % 10;           // IT WILL RETURN THE REMAINDER VALUE OF N AND ASSIGN IT TO C.
+      sum = sum + c;        //   THE VALUE IN C IS ADDED TO SUM.
+      printf("%d\n",sum);      // PRINT THE VALUE OF SUM
+      n = n / 10;               // IF WE DIVIDE 12345 BY 10 IT WILL RETURN THE QUOTIENT 1234 EACH TIME ONE VALUE FROM RIGHT IS REMOVED WHEN WE DIVIDE
+
+
+}
+
+   return 0;
+
+}
